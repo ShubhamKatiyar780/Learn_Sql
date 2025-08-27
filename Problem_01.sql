@@ -22,9 +22,11 @@ INSERT INTO Products (Product, Price)
 		   ('P2', 200),
            ('P3', 300),
            ('P4', 400);
-
-# get the list of Customres who have purchased more than 1 products which they have purchased is price above 100.
-# Also order the customers by number of products they have purchased in descending order
+           
+/*
+get the list of Customres who have purchased more than 1 products which they have purchased is price above 100.
+Also order the customers by number of products they have purchased in descending order
+*/
            
 # join both tables with price grater than 100
 SELECT
