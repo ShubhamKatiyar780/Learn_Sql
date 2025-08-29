@@ -1,4 +1,4 @@
--- BETWEEN, IN(SOME), LIKE and NOT LIKE
+-- BETWEEN, IN(SOME), NOT IN, LIKE and NOT LIKE
 
 USE employees;
 
@@ -7,7 +7,11 @@ SELECT Name FROM Students WHERE Marks BETWEEN 50 AND 90;	-- Same as: Marks >= 50
 
 -- IN
 SELECT Name FROM Students WHERE Marks IN (60, 75, 85); -- names of students whose marks are either 60, 75, or 85
+SELECT * FROM employee1 WHERE dept IN ('Account', 'Cashier', 'Loan');
+
+-- NOT IN
 SELECT Name FROM Students WHERE Marks NOT IN (60, 75, 85); -- names of students whose marks are nither 60, 75, nor 85
+SELECT * FROM employee1 WHERE dept NOT IN ('Account', 'Cashier', 'Loan');
 
 -- LIKE
 SELECT Name FROM Students WHERE Name LIKE 'S%';	-- Names starting with 'S'
