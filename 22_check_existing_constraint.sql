@@ -1,0 +1,9 @@
+-- how to check existing constraint
+SELECT CONSTRAINT_TYPE,
+CONSTRAINT_NAME
+FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS
+WHERE TABLE_NAME = 'Students';
+
+-- drop constraint
+ALTER TABLE students
+DROP CONSTRAINT chk_name;
